@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;  
+    font-family:'Quicksand', sans-serif; 
+}
+
+:root{
+    --light-pink: #C7C7C7; 
+    --text-input-field: #797979;
+    --background-input-field: #F7F7F7; 
+    --green-light: #ACD9B2; 
+    --dark: #232830; 
+    --white: #FFFFFF; 
+    --black: #000000; 
+    --error: #D25050;
+    --invalid: #E7E7E7;  
+    --sm: 14px; 
+    --md: 16px; 
+    --lg: 18px; 
+    --borde: 6px; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+section{
+    flex: 1;
+}
+
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/* LOGIN */
+
+.login{
+    
+    height: 90vh;
+    display: grid;
+    place-items: center;
+   
+}
+
+.icon-close {
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    z-index: 10;
+}
+
+.wrapperForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-height: 2.5rem;
+    margin: 2rem; 
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.login__form label, 
+.form-password_recovery1 label{ 
+    font-size: var(--sm);    
+    font-weight: bold;
+    line-height: 1.3rem;
+    color: var(--black); 
+}
+
+.login__form input, 
+.form-password_recovery1 input{
+    height: 2.5rem;
+    margin: .5rem 0; 
+    border-radius: var(--borde);
+    padding: .3rem;
+    border: solid 1px var(--background-input-field);
+    background-color: var(--background-input-field);        
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--md);
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--text-input-field);
+}
+
+#email-address,
+#login-Password {
+    padding-left: 1rem;
+}
+
+.primary-button,  
+#btn-logIn, 
+#btn-password_recovery1, 
+#btn-password_recovery2, 
+#btn-new_password,
+#btn-create_account,
+#btn-my_account_edit {
+    width: 95%;
+    height: 3.2rem;
+    /* margin-top: 1rem; */
+    margin-top: auto;
+    color:var(--white);
+    border: solid 1px var(--green-light);
+    background-color: var(--green-light);   
+    font-size: var(--md);
+    text-align: center;         
+}
+
+#btn-create_account, 
+#btn-my_account_edit,
+#btn-my_account{
+    width: 40%;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#btn-my_account {
+    width: 100%;
+}
+
+.login__form h2{
+    font-size: var(--md);
+    font-weight: 400;
+    color: var(--green-light);
+    margin-top: 1.5rem; 
+    text-align: center;
+}
+
+.secondary-button, 
+#btn-sign-Up, 
+#btn-sign-Up-error1,
+#btn-my_account{
+    height: 3.2rem;
+    margin-top: 3rem;
+    color:var(--green-light);
+    border: solid 1px var(--green-light);
+    background-color: var(--white);
+    font-size: var(--md);
+    text-align: center;   
+}
+
+/* LOGIN ERROR UNO */
+
+.form-error1 label, 
+#enter-valid-email{
+    color: var(--error); 
+}
+
+.form-error1 input, 
+#email-address-error2{
+    border: solid 1px var(--error);
+}
+
+#invalid-pw{
+    color: var(--error); 
+    font-size: var(--md);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#btn-logIn-error1, 
+#btn-logIn-error2 {
+    height: 3.5rem;
+    color: var(--white);
+    background-color: var(--invalid);
+    border: none; 
+}
+
+#forgot-pw-error1, 
+#forgot-pw-error2 {
+    margin: 1.5rem 0;
+}
+
+/* LOGIN ERROR 2 */
+
+#btn-logIn-error2{
+    margin-top: 3rem;
+}
+
+/* PASSWORD RECOVERY  */
+
+.subtitulo1 {
+    font-size: var(--lg);
+    color: var(--black); 
+    font-weight: 700;
+    text-align: center;
+}
+.subtitulo2 {
+    display: inline-block;
+    font-size: var(--lg);
+    color: var(--text-input-field); 
+    font-weight: 400;
+    text-align: center;
+    width: 21rem;
+    margin: 1rem 0; 
+}
+
+.form-password_recovery1 {
+    color: var(--green-light);
+}
+
+/* PASSWORD RECOVERY 2 */
+
+.wrapper-envelope {
+    width: 8rem; 
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+    border-radius: 50%;
+    background-color: var(--background-input-field);
+}
+
+.envelope{
+    width: 6rem;
+    height: 4rem;
+    justify-self: center;    
+}
+
+.form-password_recovery2 h2 span{
+    color: black; 
+}
+.resend{
+    color: var(--green-light); 
+    text-decoration: none;
+}
+
+
+/* NEW PASSWORD */
+
+.wrapper-new_password_sbt2 {
+    width: 90%;
+}
+
+/* CREATE AN ACCOUNT */
+
+.nav-mobile li{
+    list-style: none;
+}
+
+
+#subtitulo-create_account,
+#subtitulo-my_account, 
+#subtitulo-my_account_edit{
+   margin-bottom: 2rem;
+   align-self: flex-start;
+   color: var(--black);
+   font-size: var(--lg);
+   font-weight: bolder;
+}
+
+.nav-mobile{
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem; 
+    box-shadow: 0 4px 3px -3px var(--invalid) ;  
+}
+
+.wrapper_nav-desktop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-desktop-first, 
+.nav-desktop-end {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.nav-desktop-first li a, 
+.nav-desktop-end li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-end: 1rem;    
+}
+
+
+.desktop-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.desktop-options li a, 
+.nav-desktop-end li a span{
+    margin-top: 0.33rem;
+    font-size: var(--md);
+    color: var(--light-pink);
+}
+
+.wrapper_nav-desktop,
+.nav-desktop-first,
+.desktop-options,
+.nav-desktop-end {
+    list-style: none;
+}
+
+.nav-mobile__item,
+.nav-desktop__item {
+    height: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.bar-menu{
+    height: 1rem;
+}
+
+
+@media (min-width: 720px) {
+
+    .logo {
+        visibility: hidden;
+    }
+
+ 
+    .login__form{
+        width: 30rem;
+    }
+
+    #btn-create_account,
+    #btn-my_account,
+    #btn-my_account_edit {
+        max-width: 30rem; 
+    }
+
+    .nav-mobile {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 720px){
+    .wrapper_nav-desktop{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+

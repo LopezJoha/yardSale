@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> 
+        <div class="wrapper_nav-desktop">
+            <ul class="nav-desktop-first">
+                <li><a><img class="nav-desktop__item" src="./assets/logo_yard_sale.jpg"></a></li>
+                <li>
+                    <ul class="desktop-options">
+                        <li><a>All</a></li>
+                        <li><a>Clothes</a></li>
+                        <li><a>Electronics</a></li>
+                        <li><a>Furniture</a></li>
+                        <li><a>Toys</a></li>
+                        <li><a>Others</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-desktop-end">
+                <li><a><span>Sign in</span></a></li>
+                <li><a><img class="nav-desktop__item shopping-car" src="./assets/shopping-cart.png"></a></li>
+            </ul>            
+        </div>       
+    </header>
+    
+        <section class="login">                        
+            <img src="/assets/icon_close.jpg" alt="" class="icon-close">
+            <div class="wrapperForm">
+                <img src="/assets/logo_yard_sale.jpg" alt="logo" class="logo"/>
+                <form class="login__form">
+                    <label for="email-address">Email address</label>
+                    <input id="email-address" type="email" placeholder="johalopez22@gmail.com" >
+
+                    <label for="login-Password ">Password</label>
+                    <input id="login-Password" type="password" placeholder="***********">
+
+                    <input class="primary-button" id=btn-logIn type="submit" value="Log in">
+
+                    <h2>Forgot my password</h2>
+                    <input class="secondary-button" type="submit" id="btn-sign-Up" value="Sign up">
+                </form>
+               
+            </div>
+            
+        </section>
+
+    <footer>
+
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

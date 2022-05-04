@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>        
+        <ul class="nav-mobile">
+            <a href="#"><img class="nav-mobile__item bar-menu" src="./assets/menu.png"></a>
+            <a href="#"><img class="nav-mobile__item" src="./assets/logo_yard_sale.jpg"></a>
+            <a href="#"><img class="nav-mobile__item" src="./assets/shopping-cart.png"></a>
+        </ul>
+        
+        <div class="wrapper_nav-desktop">
+            <ul class="nav-desktop-first">
+                <li><a><img class="nav-desktop__item" src="./assets/logo_yard_sale.jpg"></a></li>
+                <li>
+                    <ul class="desktop-options">
+                        <li><a>All</a></li>
+                        <li><a>Clothes</a></li>
+                        <li><a>Electronics</a></li>
+                        <li><a>Furniture</a></li>
+                        <li><a>Toys</a></li>
+                        <li><a>Others</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-desktop-end">
+                <li><a><span>Sign in</span></a></li>
+                <li><a><img class="nav-desktop__item shopping-car" src="./assets/shopping-cart.png"></a></li>
+            </ul>            
+        </div>
+    </header>
+
+        <section class="login login-create_account"> 
+            <div class="wrapperForm wrapperForm-create_account">
+                <form class="login__form form-create_account">
+                    <h2 class="subtitulo1" id="subtitulo-create_account">My account</h2>
+
+                    <label for="name-create_account">Name</label>
+                    <input id="name-create_account" type="email" placeholder="Johana Lopez" >
+
+                    <label for="email-create_account">Email address</label>
+                        <input id="email-create_account" type="email" placeholder="johalopez22@gmail.com" >
+
+                    <label for="password-create_account ">Password</label>
+                    <input id="password-create_account" type="password" placeholder="***********">                
+                        
+                </form>                   
+            </div>            
+            <input class="primary-button button-password-create_account" id=btn-create_account type="submit" value="Create">   
+        </section>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Error</title>
+
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header> 
+        <div class="wrapper_nav-desktop">
+            <ul class="nav-desktop-first">
+                <li><a><img class="nav-desktop__item" src="./assets/logo_yard_sale.jpg"></a></li>
+                <li>
+                    <ul class="desktop-options">
+                        <li><a>All</a></li>
+                        <li><a>Clothes</a></li>
+                        <li><a>Electronics</a></li>
+                        <li><a>Furniture</a></li>
+                        <li><a>Toys</a></li>
+                        <li><a>Others</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav-desktop-end">
+                <li><a><span>Sign in</span></a></li>
+                <li><a><img class="nav-desktop__item shopping-car" src="./assets/shopping-cart.png"></a></li>
+            </ul>            
+        </div>       
+    </header>
+        <section class="login">                        
+            <img src="/assets/icon_close.jpg" alt="" class="icon-close">            
+            <div class="wrapperForm wrapper-Error1">
+                <img src="/assets/logo_yard_sale.jpg" alt="logo" class="logo"/>
+
+                <form class="login__form form-error1">
+                    <label for="email-address-error1">Email address</label>
+                    <input id="email-address-error1" type="email" placeholder="johalopez22@gmail.com" >
+
+                    <label for="login-Password-error1">Password</label>
+                    <input id="login-Password-error1" type="password" placeholder="***********">
+
+                    <h2 id="invalid-pw">Invalid user ID and password combination</h2>
+
+                    <input class="primary-button pri-btn-error1" id=btn-logIn-error1 type="submit" value="Log in">
+
+                    <h2 id="forgot-pw-error1">Forgot my password</h2>
+                    <input class="secondary-button sec-btn-error1" type="submit" id="btn-sign-Up-error1" value="Sign up">
+
+                </form>               
+            </div>
+            
+        </section>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
